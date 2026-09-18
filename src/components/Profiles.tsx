@@ -20,7 +20,7 @@ export default function Profiles() {
 
       {/* TOP FLOATING HEADER BRANDING */}
       <div className="relative z-20 mb-16 sm:mb-24 px-6 text-center w-full max-w-7xl mx-auto flex flex-col items-center">
-        <span className="font-mono text-[9px] tracking-[0.4em] uppercase text-[#03307B] font-bold mb-2 block opacity-65">
+        <span className="font-mono text-[9px] tracking-[0.4em] uppercase text-[#03307B] font-bold mb-2 block opacity-85">
           The Happy Couple
         </span>
         <h2 className="font-serif text-3xl sm:text-4xl text-[#03307B] font-semibold tracking-tight">
@@ -89,7 +89,7 @@ export default function Profiles() {
 
               {/* Personal Groom Quote */}
               {WEDDING_CONFIG.groomQuote && (
-                <p className="font-serif text-xs text-[#03307B]/60 italic leading-relaxed pt-2">
+                <p className="font-serif text-xs text-[#03307B]/75 italic leading-relaxed pt-2">
                   "{WEDDING_CONFIG.groomQuote}"
                 </p>
               )}
@@ -144,7 +144,7 @@ export default function Profiles() {
 
               {/* Personal Bride Quote */}
               {WEDDING_CONFIG.brideQuote && (
-                <p className="font-serif text-xs text-[#03307B]/60 italic leading-relaxed pt-2">
+                <p className="font-serif text-xs text-[#03307B]/75 italic leading-relaxed pt-2">
                   "{WEDDING_CONFIG.brideQuote}"
                 </p>
               )}

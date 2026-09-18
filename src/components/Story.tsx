@@ -278,7 +278,7 @@ function MobileStory() {
 
         <div className="relative z-10 w-full text-center space-y-2 shrink-0">
           <div>
-            <span className="font-mono text-[9px] tracking-[0.4em] uppercase text-[#03307B]/60 font-bold block mb-0.5">
+            <span className="font-mono text-[9px] tracking-[0.4em] uppercase text-[#03307B]/80 font-bold block mb-0.5">
               Our Journey Story
             </span>
             <h2 className="font-serif text-2xl text-[#03307B] font-semibold tracking-tight">
@@ -319,7 +319,7 @@ function MobileStory() {
               >
                 <div className="flex items-center justify-center gap-1.5 text-rose-500/80">
                   <Heart className="w-3.5 h-3.5 fill-current animate-pulse" />
-                  <span className="font-mono text-[9px] tracking-widest uppercase text-[#03307B]/60">
+                  <span className="font-mono text-[9px] tracking-widest uppercase text-[#03307B]/80">
                     {activeStory.date} • {activeStory.location}
                   </span>
                 </div>
@@ -376,7 +376,7 @@ function MobileStory() {
           </div>
         </div>
 
-        <div className="relative z-10 text-[9px] font-mono text-[#03307B]/40 flex items-center justify-center gap-1.5 select-none pt-1 pb-2 shrink-0 mt-auto">
+        <div className="relative z-10 text-[9px] font-mono text-[#03307B]/70 flex items-center justify-center gap-1.5 select-none pt-1 pb-2 shrink-0 mt-auto">
           <div className="w-3 h-px bg-[#03307B]/30" />
           <span>Scroll to see our journey stack</span>
         </div>
@@ -522,7 +522,7 @@ function DesktopStory() {
 
           <div className="col-span-7 flex flex-col justify-center space-y-6 pl-8">
             <div>
-              <span className="font-mono text-[9px] tracking-[0.4em] uppercase text-[#03307B]/60 font-bold block mb-1">
+              <span className="font-mono text-[9px] tracking-[0.4em] uppercase text-[#03307B]/80 font-bold block mb-1">
                 Our Journey Story
               </span>
               <h2 className="font-serif text-3xl text-[#03307B] font-semibold tracking-tight">
@@ -561,7 +561,7 @@ function DesktopStory() {
                 >
                   <div className="flex items-center gap-2 text-rose-500/80">
                     <Heart className="w-4 h-4 fill-current animate-pulse" />
-                    <span className="font-mono text-[10px] tracking-widest uppercase text-[#03307B]/60">
+                    <span className="font-mono text-[10px] tracking-widest uppercase text-[#03307B]/80">
                       {activeStory.date} • {activeStory.location}
                     </span>
                   </div>
@@ -584,7 +584,7 @@ function DesktopStory() {
               </AnimatePresence>
             </div>
 
-            <div className="pt-2 text-[10px] font-mono text-[#03307B]/40 flex items-center gap-2 select-none">
+            <div className="pt-2 text-[10px] font-mono text-[#03307B]/70 flex items-center gap-2 select-none">
               <div className="w-4 h-px bg-[#03307B]/30" />
               <span>Scroll down to continue our journey</span>
             </div>

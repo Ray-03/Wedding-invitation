@@ -145,7 +145,7 @@ export default function Gifts() {
                         </button>
                       </div>
                       <div className="pt-1.5 border-t border-[#03307B]/5 flex items-center justify-between">
-                        <span className="font-sans text-[8px] sm:text-[9px] text-[#03307B]/40 uppercase tracking-widest">
+                        <span className="font-sans text-[8px] sm:text-[9px] text-[#03307B]/70 uppercase tracking-widest">
                           Account Holder
                         </span>
                         <span className="font-sans text-xs font-semibold text-[#03307B]/80">

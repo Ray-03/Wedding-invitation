@@ -150,7 +150,7 @@ export default function Details() {
               <div className="space-y-2 font-sans text-sm text-[#03307B]/80 leading-relaxed">
                 <p className="font-medium">{WEDDING_CONFIG.holyMatrimonyVenue}</p>
                 {WEDDING_CONFIG.holyMatrimonyAddress && (
-                  <p className="text-xs text-[#03307B]/60">
+                  <p className="text-xs text-[#03307B]/75">
                     {WEDDING_CONFIG.holyMatrimonyAddress}
                   </p>
                 )}
@@ -186,7 +186,7 @@ export default function Details() {
                   <span>Watch Live Stream</span>
                 </a>
               ) : (
-                <p className="text-xs text-[#03307B]/60">Live stream link will be shared soon.</p>
+                <p className="text-xs text-[#03307B]/75">Live stream link will be shared soon.</p>
               )}
               <div className="space-y-2 mt-4">
                 <CalendarButton
@@ -212,7 +212,7 @@ export default function Details() {
             >
               <div className="space-y-2 font-sans text-sm text-[#03307B]/80 leading-relaxed">
                 <p className="font-medium">{WEDDING_CONFIG.ceremonyVenue}</p>
-                <p className="text-xs text-[#03307B]/60">{WEDDING_CONFIG.ceremonyAddress}</p>
+                <p className="text-xs text-[#03307B]/75">{WEDDING_CONFIG.ceremonyAddress}</p>
               </div>
               <div className="space-y-2 mt-4">
                 <MapsButton url={WEDDING_CONFIG.venueMapsUrl} />

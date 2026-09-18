@@ -154,7 +154,7 @@ export default function Countdown() {
               <span className="font-sans text-[11px] tracking-[0.2em] uppercase text-[#03307B]/80 mt-2 font-semibold">
                 {item.label}
               </span>
-              <span className="font-mono text-[8px] tracking-widest text-[#03307B]/40 uppercase mt-0.5">
+              <span className="font-mono text-[8px] tracking-widest text-[#03307B]/65 uppercase mt-0.5">
                 {item.desc}
               </span>
             </motion.div>

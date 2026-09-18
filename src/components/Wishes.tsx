@@ -127,7 +127,7 @@ export default function Wishes() {
   const renderFormArea = () => {
     if (guestLoading) {
       return (
-        <p className="font-sans text-sm text-[#03307B]/60 pt-8">
+        <p className="font-sans text-sm text-[#03307B]/80 pt-8">
           Loading your invitation…
         </p>
       );
@@ -183,7 +183,7 @@ export default function Wishes() {
                   : "border-[#03307B]/30 text-[#03307B] focus:border-[#3A75C4]"
             }`}
           />
-          <label className="absolute left-0 top-[-12px] text-[10px] tracking-wider uppercase font-sans text-[#03307B]/50 pointer-events-none">
+          <label className="absolute left-0 top-[-12px] text-[10px] tracking-wider uppercase font-sans text-[#03307B]/70 pointer-events-none">
             Full Name
           </label>
           {errors.name && (
@@ -205,7 +205,7 @@ export default function Wishes() {
             className={`w-full bg-transparent border-b ${errors.message ? "border-red-400" : "border-[#03307B]/30"} py-3 outline-none font-sans text-sm tracking-wide focus:border-[#3A75C4] transition-colors resize-none peer`}
           />
           <label
-            className={`absolute left-0 top-3 ${errors.message ? "text-red-400" : "text-[#03307B]/50"} text-xs tracking-wider uppercase font-sans pointer-events-none transition-all duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:top-3 peer-focus:top-[-12px] peer-focus:text-[10px] peer-focus:text-[#3A75C4] peer-[:not(:placeholder-shown)]:top-[-12px] peer-[:not(:placeholder-shown)]:text-[10px]`}
+            className={`absolute left-0 top-3 ${errors.message ? "text-red-400" : "text-[#03307B]/70"} text-xs tracking-wider uppercase font-sans pointer-events-none transition-all duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:top-3 peer-focus:top-[-12px] peer-focus:text-[10px] peer-focus:text-[#3A75C4] peer-[:not(:placeholder-shown)]:top-[-12px] peer-[:not(:placeholder-shown)]:text-[10px]`}
           >
             Write Message & Prayer
           </label>
@@ -218,7 +218,7 @@ export default function Wishes() {
 
         <div className="space-y-4 pt-2">
           <span
-            className={`text-[10px] tracking-widest uppercase font-sans block ${errors.rsvp ? "text-red-500" : "text-[#03307B]/50"}`}
+            className={`text-[10px] tracking-widest uppercase font-sans block ${errors.rsvp ? "text-red-500" : "text-[#03307B]/70"}`}
           >
             RSVP Confirmation{" "}
             {errors.rsvp && (
@@ -253,7 +253,7 @@ export default function Wishes() {
                     ? "bg-[#03307B] text-white border-[#03307B]"
                     : errors.rsvp
                       ? "bg-transparent text-red-400 border-red-200 hover:border-red-400"
-                      : "bg-transparent text-[#03307B]/60 border-[#03307B]/20 hover:border-[#03307B]/40"
+                      : "bg-transparent text-[#03307B]/80 border-[#03307B]/20 hover:border-[#03307B]/40"
                 }`}
               >
                 {option.label}
@@ -264,7 +264,7 @@ export default function Wishes() {
           {rsvpStatus === "Attending" && (
             <div className="space-y-3 pt-2">
               <span
-                className={`text-[10px] tracking-widest uppercase font-sans block ${errors.attendingCount ? "text-red-500" : "text-[#03307B]/50"}`}
+                className={`text-[10px] tracking-widest uppercase font-sans block ${errors.attendingCount ? "text-red-500" : "text-[#03307B]/70"}`}
               >
                 How many attending?{" "}
                 {errors.attendingCount && (
@@ -376,7 +376,7 @@ export default function Wishes() {
                 className="space-y-5"
               >
                 {paginatedResponses.length === 0 ? (
-                  <p className="font-serif italic text-sm text-[#03307B]/50 text-center py-12">
+                  <p className="font-serif italic text-sm text-[#03307B]/75 text-center py-12">
                     {loadingMore
                       ? "Loading messages…"
                       : "No messages yet. Be the first to leave a wish."}

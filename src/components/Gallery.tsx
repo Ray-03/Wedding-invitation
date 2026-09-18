@@ -255,7 +255,7 @@ export default function Gallery({ images }: GalleryProps) {
                   
                   {/* Lightbox Navigation Dots & Index Counter */}
                   <div className="w-full text-center mt-4 px-3 select-none">
-                    <p className="font-serif text-[11px] text-[#03307B]/50 uppercase tracking-widest mb-4">
+                    <p className="font-serif text-[11px] text-[#03307B]/75 uppercase tracking-widest mb-4">
                       Photo {activeIdx + 1} of {shuffledImages.length}
                     </p>
                     <div className="flex justify-center gap-1">

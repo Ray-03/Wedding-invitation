@@ -50,9 +50,9 @@ export default function Quotes() {
             {WEDDING_CONFIG.bibleQuote}
           </h2>
 
-          <div className="w-16 h-[1px] bg-[#3A75C4]/40 mx-auto" />
+          <div className="w-16 h-[1px] bg-[#3A75C4]/70 mx-auto" />
           
-          <p className="font-sans text-xs sm:text-sm tracking-[0.1em] text-[#03307B]/70 max-w-md mx-auto leading-relaxed">
+          <p className="font-sans text-xs sm:text-sm tracking-[0.1em] text-[#03307B]/80 max-w-md mx-auto leading-relaxed">
             {WEDDING_CONFIG.bibleQuoteSource}
           </p>
 

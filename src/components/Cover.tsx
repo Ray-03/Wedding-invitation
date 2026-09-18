@@ -174,7 +174,7 @@ export default function Cover({
             className="absolute bottom-6 left-1/2 -translate-x-1/2 min-touch px-4 py-2 flex flex-col items-center justify-center gap-1.5 cursor-pointer z-40 touch-manipulation"
             onClick={scrollToQuotes}
           >
-            <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-[#03307B]/60 font-semibold">
+            <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-[#03307B]/80 font-semibold">
               Scroll Down
             </span>
             <div className="text-[#3A75C4]">
