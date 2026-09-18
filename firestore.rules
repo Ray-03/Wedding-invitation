@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Client SDK is locked. Guest lookup, RSVP, and guestbook go through
+    // Next.js API routes (HMAC invite token + optional App Check).
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

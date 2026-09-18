@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "Wish": {
+      "title": "Wish",
+      "description": "A guest wish for the wedding.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name of the guest" },
+        "wish": { "type": "string", "description": "The wish content" },
+        "timestamp": { "type": "string", "format": "date-time", "description": "When it was sent" }
+      },
+      "required": ["name", "wish", "timestamp"]
+    },
+    "Guest": {
+      "title": "Guest",
+      "description": "Personalized invitation recipient.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Guest display name" },
+        "title": { "type": "string", "description": "Honorific e.g. Mr / Mrs / Dear" },
+        "inviteType": {
+          "type": "string",
+          "enum": ["physical", "livestream"],
+          "description": "physical = holy matrimony + hide story; livestream = live stream + reception + show story"
+        },
+        "showStory": {
+          "type": "boolean",
+          "description": "Derived from inviteType (livestream=true, physical=false)"
+        },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "inviteType", "showStory"]
+    }
+  },
+  "firestore": {
+    "/wishes/{wishId}": {
+      "schema": "Wish",
+      "description": "Collection of generic guest wishes"
+    },
+    "/guest_responses/{guestId}": {
+      "schema": "Wish",
+      "description": "Public guestbook entries keyed by guest document ID"
+    },
+    "/guests/{guestId}": {
+      "schema": "Guest",
+      "description": "Personalized invitation guests keyed by document ID used in ?g=; wish/rsvpStatus filled after RSVP"
+    }
+  }
+}
