@@ -1,0 +1,42 @@
+[
+  {
+    "chapter": "Chapter I",
+    "date": "March 2024",
+    "title": "Where It Began",
+    "subtitle": "Two Paths, One Hello",
+    "location": "Bandung, Indonesia",
+    "desc": "What started as a brief introduction at a friend's gathering slowly grew into long walks, shared coffee, and the quiet feeling that we had found something rare.",
+    "images": ["story1", "story1-1"],
+    "captions": [
+      "The evening we knew this was different. 🌅",
+      "Walking into forever. 🤍"
+    ],
+    "rotation": -3.5
+  },
+  {
+    "chapter": "Chapter II",
+    "date": "December 2025",
+    "title": "The Promise",
+    "subtitle": "A Ring, A Yes",
+    "location": "Jakarta, Indonesia",
+    "desc": "After countless ordinary days that never felt ordinary with each other, he asked—and she said yes. A small circle of gold, and a promise to keep choosing one another.",
+    "images": ["story2"],
+    "caption": "She said yes. 💍",
+    "rotation": 3
+  },
+  {
+    "chapter": "Chapter III",
+    "date": "August 2026",
+    "title": "Forever Begins",
+    "subtitle": "Two Families, One Story",
+    "location": "Jakarta, Indonesia",
+    "desc": "Surrounded by the people we love most, we walked toward a new chapter—hand in hand, grateful, and ready to begin the rest of our lives together.",
+    "descs": [
+      "Surrounded by the people we love most, we walked toward a new chapter—hand in hand, grateful, and ready to begin the rest of our lives together.",
+      "Before family, friends, and God, we made a vow to honor, cherish, and grow old together."
+    ],
+    "images": ["story3"],
+    "captions": ["And so our forever officially began. ⛪✨"],
+    "rotation": -2
+  }
+]
