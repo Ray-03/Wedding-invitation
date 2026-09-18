@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+/*
+  Type system
+  - font-serif  → Playfair Display  (headings, names, display)
+  - font-sans   → Lora              (body / small readable serif — replaces Inter)
+  - font-mono   → Space Mono        (eyebrow labels, codes, tracking UI)
+*/
+
+@theme {
+  --font-sans: "Lora", ui-serif, Georgia, "Times New Roman", Times, serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --animate-aurora: aurora 60s linear infinite;
+}
+
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --transparent: transparent;
+  --blue-500: #03307B;
+  --indigo-300: #D0DFF2;
+  --blue-300: #3A75C4;
+  --violet-200: #FFFFFF;
+  --blue-400: #1E4DA1;
+  --aurora-1: #03307B;
+  --aurora-2: #3A75C4;
+  --aurora-3: #124AA0;
+  --aurora-4: #FFFFFF;
+  /* Apple HIG / Material: minimum comfortable touch target */
+  --min-touch: 44px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #03307B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Headings default to display serif */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 1.65;
+  }
+
+  button,
+  [role="button"] {
+    min-height: var(--min-touch);
+  }
+
+  /* Tiny uppercase labels stay legible */
+  .font-mono {
+    letter-spacing: 0.06em;
+  }
+}
+
+@layer utilities {
+  .min-touch {
+    min-height: var(--min-touch);
+    min-width: var(--min-touch);
+  }
+
+  /* Prefer slightly larger microcopy when used for reading */
+  .text-readable-xs {
+    font-size: 0.8125rem; /* 13px */
+    line-height: 1.55;
+  }
+}

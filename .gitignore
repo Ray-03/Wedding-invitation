@@ -1,0 +1,47 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# build
+build/
+dist/
+coverage/
+
+# env (keep example)
+.env*
+!.env.example
+
+# firebase secrets / local credentials
+secrets/*
+!secrets/README.md
+firebase-applet-config.json
+*-service-account*.json
+
+# generated invite link exports
+data/guests-links-*.csv
+data/guests-links-*.xlsx
+data/invite-messages-*.xlsx
+
+# debug / OS
+*.log
+.DS_Store
+Thumbs.db
+.tmp-video-frames/
+
+# personal media (keep locally, do not commit)
+public/audio/*.m4a
+public/audio/*.mp3
+public/audio/*.wav
+public/images/logo.webp
+public/images/logo_livestream.webp
+
+# typescript
+*.tsbuildinfo
+
+# vercel
+.vercel
+
+/data/guests.csv
